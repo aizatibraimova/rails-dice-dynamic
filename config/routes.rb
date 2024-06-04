@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get("/dice/2/10", { :controller => "twobyten", :action => "play_two_ten" })
   get("/dice/1/20", { :controller => "onebytwenty", :action => "play_one_twenty" })
   get("/dice/5/4", { :controller => "fivebyfour", :action => "play_five_four" })
+  get("/dice/:zebra/:giraffe", { :controller => "flexible", :action => "play_flexible" })
 end
